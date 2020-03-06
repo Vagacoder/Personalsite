@@ -1,15 +1,18 @@
 import React from 'react';
-import logo from './react-logo.svg';
+import reactLogo from './react-logo.svg';
+import muiLogo from './materialui-logo.png';
 import './ReactLog.css';
 
 const ReactLog = () => {
   return (
-    <div className="ReactLog">
-      <header className="log-header">
-        <img src={logo} className="logo" alt="logo" />
-        <p>
-          Powered by <b>React</b>
-        </p>
+    <div className="Logs">
+      <header className="react-log-header">
+        <img src={reactLogo} className="react-logo" alt="react-logo" />
+        <p>Powered by <b>React</b></p>
+      </header>
+      <header className="mui-log-header">
+        <img src={muiLogo} className="mui-logo" alt='mui-logo' />
+        <p>Powered by <b>Material-UI</b></p>
       </header>
     </div>
   );

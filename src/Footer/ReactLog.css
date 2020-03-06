@@ -1,19 +1,25 @@
-.ReactLog {
+.Logs {
   text-align: center;
 }
 
-.logo {
+.react-logo, .mui-logo {
   height: 15vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .logo {
+  .react-logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
-.log-header {
+@media (prefers-reduced-motion: no-preference) {
+  .mui-logo {
+    animation: logo-rotateY infinite 20s linear;
+  }
+}
+
+.react-log-header {
   background-color: #282c34;
   /* min-height: 100vh; */
   display: flex;
@@ -36,4 +42,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.mui-log-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  font-size: 3vmin;
+  color: white;
+}
+ 
+@keyframes logo-rotateY {
+  from { transform: rotateY(0deg);}
+  to {transform: rotateY(360deg);}
 }
