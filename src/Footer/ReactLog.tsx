@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './react-logo.svg';
 import './ReactLog.css';
 
 const ReactLog = () => {
@@ -10,14 +10,6 @@ const ReactLog = () => {
         <p>
           Powered by <b>React</b>
         </p>
-        <a
-          className="React-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );

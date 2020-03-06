@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactLog from './ReactLog';
+import Footer from './Footer';
 import * as MUI from '@material-ui/core';
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
     <div className="App">
       <MUI.Typography variant="h1">Qirui Hu's Personal Site</MUI.Typography>
       <MUI.Typography variant="h4">MainPage</MUI.Typography>
-      <ReactLog />
+      <Footer />
     </div>
   );
 }
