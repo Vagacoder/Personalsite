@@ -1,3 +1,5 @@
+
+/* 1. Global style start ========================= */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +13,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+/* 1. Global style end ========================== */
+
+
+/* 2. Home style start ========================== */
+
+
+
+
+/* 2. Home style end ============================ */
+#home {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  background: #161415 url(./images/homebg1.jpg) no-repeat top center;
+  background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+}
+
+#home .BannerText {
+  color: #fff;
+
+}
+
+/* 3. About style start ========================== */
+#about {
+  background: #262425;
+  overflow: hidden;
+}
+
+#about .Biography, .EmailAddress {
+  color: #fff;
+}
+
+/* 3. About style end ============================ */

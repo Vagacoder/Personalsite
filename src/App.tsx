@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './Home';
+import About from './About';
 import Footer from './Footer';
-import * as MUI from '@material-ui/core';
 
 const App = () => {
 
@@ -19,14 +19,17 @@ const App = () => {
         name: 'github',
         url: 'https://github.com/Vagacoder',
       }
-    ]
+    ],
+    profImageUrl: 'https://avatars1.githubusercontent.com/u/30400336?s=460&u=b4677559a01f461ba66dae3f04178fb24c343a09&v=4',
+    biography: 'Entry level web developer/software engineer',
+    email: 'qiruiuh[at]gmail[.]com',
+    resumeUrl: 'https://drive.google.com/file/d/18_UDc7a7wHQ44AUjTex2QEKq1s_qdfPC/view?usp=sharing'
   };
 
   return (
     <div className="App">
       <Home data={data} />
-      <MUI.Typography variant="h1">Qirui Hu's Personal Site</MUI.Typography>
-      <MUI.Typography variant="h4">MainPage</MUI.Typography>
+      <About data={data} />
       <Footer />
     </div>
   );

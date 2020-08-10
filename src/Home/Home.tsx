@@ -15,14 +15,14 @@ const Home = (props: any) => {
   })
 
   return (
-    <div id="Home">
+    <section id="home">
       <Navbar />
 
       <div className="Banner">
         <div className="BannerText">
           <h1>This is {data.name}</h1>
           <h3>
-            I'm a {data.location} based
+            I'm a {data.location} based 
             <span>{data.occupation}</span>. {data.description}
           </h3>
           {socialLinks}
@@ -32,7 +32,7 @@ const Home = (props: any) => {
       <div className="ScrollDown">
         <a href="#about">Replace wiht Arrow Down Button</a>
       </div>
-    </div>
+    </section>
   );
 }
 
