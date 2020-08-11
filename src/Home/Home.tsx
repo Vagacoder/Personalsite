@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-const Home = (props: any) => {
+const Home = React.forwardRef((props: any, ref:any) => {
 
-  const { data } = props;
-  console.log(data);
+  const { data, ...scrollTos } = props;
+  // console.log('Home scollTos:', scrollTos);
 
   const socialLinks = (data.socials).map((social:any) =>{
     return (
@@ -15,9 +15,8 @@ const Home = (props: any) => {
   })
 
   return (
-    <section id="home">
-      <Navbar />
-
+    <section id="home" ref={ref}>
+      <Navbar scrollTos={scrollTos} />
       <div className="Banner">
         <div className="BannerText">
           <h1>This is {data.name}</h1>
@@ -34,6 +33,6 @@ const Home = (props: any) => {
       </div>
     </section>
   );
-}
+});
 
 export default Home;

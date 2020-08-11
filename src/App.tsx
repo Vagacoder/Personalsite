@@ -26,10 +26,30 @@ const App = () => {
     resumeUrl: 'https://drive.google.com/file/d/18_UDc7a7wHQ44AUjTex2QEKq1s_qdfPC/view?usp=sharing'
   };
 
+  // ! Note: the react function component cannot get ref
+  // ! must use React.forwardRef(), see Home.tsx implmentation
+  let homeRef = React.createRef();
+  let aboutRef = React.createRef();
+
+
+  const scrollToRef = (ref:any) => {
+    // console.log('ref passed in:',ref);
+    // console.log('homeRef:', homeRef);
+    // console.log('aboutRef:', aboutRef);
+    window.scrollTo(0, ref.current.offsetTop);
+  }
+
+  const scrollToHome = () => scrollToRef(homeRef);
+  const scrollToAbout = () => scrollToRef(aboutRef);
+
   return (
     <div className="App">
-      <Home data={data} />
-      <About data={data} />
+      {/* <button onClick={scrollToAbout}>GO ABOUT</button> */}
+      <Home ref={homeRef} data={data} 
+          scrollToHome={scrollToHome}
+          scrollToAbout={scrollToAbout}
+          />
+      <About ref={aboutRef} data={data} />
       <Footer />
     </div>
   );

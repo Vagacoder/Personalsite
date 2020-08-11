@@ -1,13 +1,13 @@
 import React from 'react';
 import * as MUI from '@material-ui/core';
 
-const About = (props: any) => {
+const About = React.forwardRef((props: any, ref:any) => {
 
   const { data } = props;
-  console.log(data);
+  // console.log(data);
 
   return (
-    <section id="about">
+    <section id="about" ref={ref}>
       <div>
         This is About
         <img className="ProfileImage" src={data.profImageUrl} alt="my profile" />
@@ -24,7 +24,6 @@ const About = (props: any) => {
       </div>
     </section>
   );
-
-}
+});
 
 export default About;

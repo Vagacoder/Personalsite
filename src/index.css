@@ -1,5 +1,9 @@
 
 /* 1. Global style start ========================= */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -21,11 +25,6 @@ code {
 
 
 /* 2. Home style start ========================== */
-
-
-
-
-/* 2. Home style end ============================ */
 #home {
   position: relative;
   height: 800px;
@@ -37,10 +36,27 @@ code {
   overflow: hidden;
 }
 
+#home .Banner{
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #home .BannerText {
   color: #fff;
-
 }
+
+#navbar{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  color: #fff;
+  background-color: #191550;
+}
+
+
+/* 2. Home style end ============================ */
 
 /* 3. About style start ========================== */
 #about {
