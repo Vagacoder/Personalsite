@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Button, IconButton } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import { Box, Typography, Button } from '@material-ui/core';
+// import MenuIcon from '@material-ui/icons/Menu';
 
 
 const Navbar = ({scrollTos}: any) => {
@@ -24,14 +24,24 @@ const Navbar = ({scrollTos}: any) => {
         <Box>
           {/* <Button color="primary" href="#home" >Home</Button>
           <Button color="primary" href="#about">About</Button> */}
-          <Button color="primary" onClick={scrollToHome} >Home</Button>
-          <Button color="primary" onClick={scrollToAbout} >About</Button>
-          <Button color="secondary" >Resume</Button>
-          <Button>Project</Button>
-          <Button>Contact</Button>
-          <IconButton>
+          <Button color="primary" onClick={scrollToHome} >
+            <Typography variant="h5">Home</Typography>
+          </Button>
+          <Button color="primary" onClick={scrollToAbout} >
+          <Typography variant="h5">About</Typography>
+          </Button>
+          <Button color="primary" >
+            <Typography variant="h5">Resume</Typography>
+          </Button>
+          <Button color="primary" >
+          <Typography variant="h5">Project</Typography>
+          </Button>
+          <Button color="primary" >
+            <Typography variant="h5">Contact</Typography>
+          </Button>
+          {/* <IconButton>
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
         </Box>
       </Box>
     </nav>

@@ -1,36 +1,51 @@
 import React from 'react';
 import Navbar from './Navbar';
+import { Typography } from '@material-ui/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 
-const Home = React.forwardRef((props: any, ref:any) => {
+const Home = React.forwardRef((props: any, ref: any) => {
 
   const { data, ...scrollTos } = props;
   // console.log('Home scollTos:', scrollTos);
 
-  const socialLinks = (data.socials).map((social:any) =>{
+  const getFAicons: any = {
+    'github' : <FontAwesomeIcon icon={faGithub} />,
+    'linkedin' : <FontAwesomeIcon icon={faLinkedin} />,
+    'circleDown' : <FontAwesomeIcon icon={faChevronCircleDown} />
+  };
+
+  const socialLinks = (data.socials).map((social: any) => {
     return (
       <li key={social.name}>
-        <a href={social.url}>{social.name}</a>
+        <a href={social.url} target="_blank" rel="noopener noreferrer">{getFAicons[social.name]}</a>
       </li>
     );
   })
+
 
   return (
     <section id="home" ref={ref}>
       <Navbar scrollTos={scrollTos} />
       <div className="Banner">
         <div className="BannerText">
-          <h1>This is {data.name}</h1>
-          <h3>
-            I'm a {data.location} based 
-            <span>{data.occupation}</span>. {data.description}
-          </h3>
-          {socialLinks}
+          <Typography variant="h2">I'm {data.name}.</Typography>
+          <Typography variant="h5">
+            I'm a {data.location} based Junior <span>{data.occupation}</span>. <br />{data.description}
+          </Typography>
+          <br />
+          <br />
+          <ul className="Social">
+            {socialLinks}
+          </ul>
+        </div>
+
+        <div className="ScrollDown">
+          <a href="#about">{getFAicons['circleDown']}</a>
         </div>
       </div>
 
-      <div className="ScrollDown">
-        <a href="#about">Replace wiht Arrow Down Button</a>
-      </div>
     </section>
   );
 });
