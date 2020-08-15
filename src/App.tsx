@@ -9,7 +9,7 @@ const App = () => {
     name: 'Qirui Hu',
     location: 'Santa Barbara',
     occupation: 'Web developer/Software engineer',
-    description: 'I am studying hard on the way to an awesome programmer.',
+    description: 'I am studying hard on the way to be an awesome programmer.',
     socials: [
       {
         name: 'linkedin',

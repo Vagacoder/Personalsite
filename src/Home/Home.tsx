@@ -32,7 +32,7 @@ const Home = React.forwardRef((props: any, ref: any) => {
         <div className="BannerText">
           <Typography variant="h2">I'm {data.name}.</Typography>
           <Typography variant="h5">
-            I'm a {data.location} based Junior <span>{data.occupation}</span>. <br />{data.description}
+            I'm a Junior <span>{data.occupation}</span> living at {data.location}. <br />{data.description}
           </Typography>
           <br />
           <br />
