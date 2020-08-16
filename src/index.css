@@ -58,8 +58,8 @@ code {
   z-index: 999;
   width: 100%;
   color: #fff;
-  /* background-color: #191550; */
-  background-color: rgba(0x19,0x15,0x50, 0);
+  background-color: #050408;
+  /* background-color: rgba(0x19,0x15,0x50, 0); */
 }
 
 #home .Social{
@@ -84,14 +84,11 @@ code {
 #home .ScrollDown{
   margin: 24px 0;
   font-size: 36px;
+  color:#fff;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
 }
 
-#home .ScrollDown a{
-  color: #fff;
-}
-
-#home .ScrollDown a:hover{
+#home .ScrollDown:hover{
   color: #328cf3;
 }
 
@@ -99,6 +96,7 @@ code {
 
 /* 3. About style start ========================== */
 #about {
+  color: #FFF;
   background: #262425;
   padding-top: 96px;
   padding-bottom: 66px;
@@ -124,7 +122,7 @@ code {
 }
 
 #about .Biography, .EmailAddress {
-  color: #fff;
+  color: #7A7A7A;
 }
 
 /* 3. About style end ============================ */

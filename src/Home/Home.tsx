@@ -32,7 +32,9 @@ const Home = React.forwardRef((props: any, ref: any) => {
         <div className="BannerText">
           <Typography variant="h2">I'm {data.name}.</Typography>
           <Typography variant="h5">
-            I'm a Junior <span>{data.occupation}</span> living at {data.location}. <br />{data.description}
+            I'm a Junior <span>{data.occupation}</span> living at {data.location}. 
+            <br />{data.description1}
+            <br />{data.description2}
           </Typography>
           <br />
           <br />
@@ -42,7 +44,7 @@ const Home = React.forwardRef((props: any, ref: any) => {
         </div>
 
         <div className="ScrollDown">
-          <a href="#about">{getFAicons['circleDown']}</a>
+          <div onClick={scrollTos.scrollToAbout}>{getFAicons['circleDown']}</div>
         </div>
       </div>
 
