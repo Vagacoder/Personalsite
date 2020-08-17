@@ -19,7 +19,7 @@ const About = React.forwardRef((props: any, ref: any) => {
             <MUI.Grid container spacing={2} className="AboutContentContainer">
               <MUI.Grid item xs={6} className="AboutContentTexts" >
                 <MUI.Typography variant="h4">Contact Me</MUI.Typography>
-                <div className="EmailAddress">{data.email}</div>
+                <MUI.Typography variant="body1" className="EmailAddress">{data.email}</MUI.Typography>
               </MUI.Grid>
               <MUI.Grid item xs={6} className="AboutContentResume">
                 <div className="ResumeDownload">

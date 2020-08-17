@@ -1,11 +1,11 @@
 import React from 'react';
 import reactLogo from './react-logo.svg';
 import muiLogo from './materialui-logo.png';
-import './ReactLog.css';
+// import './ReactLog.css';
 
 const ReactLog = () => {
   return (
-    <div className="Logs">
+    <div id="logs">
       <header className="react-log-header">
         <img src={reactLogo} className="react-logo" alt="react-logo" />
         <p>Powered by <b>React</b></p>
