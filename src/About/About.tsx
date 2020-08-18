@@ -1,5 +1,7 @@
 import React from 'react';
 import * as MUI from '@material-ui/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 const About = React.forwardRef((props: any, ref: any) => {
 
@@ -15,7 +17,9 @@ const About = React.forwardRef((props: any, ref: any) => {
           </MUI.Grid>
           <MUI.Grid item xs={8} className="AboutContent">
             <MUI.Typography variant="h4">About Me</MUI.Typography>
-            <div className="Biography">{data.biography}</div>
+            <div className="Biography">
+              {data.biography}
+            </div>
             <MUI.Grid container spacing={2} className="AboutContentContainer">
               <MUI.Grid item xs={6} className="AboutContentTexts" >
                 <MUI.Typography variant="h4">Contact Me</MUI.Typography>
@@ -24,9 +28,9 @@ const About = React.forwardRef((props: any, ref: any) => {
               <MUI.Grid item xs={6} className="AboutContentResume">
                 <div className="ResumeDownload">
                   <a href="https://drive.google.com/file/d/18_UDc7a7wHQ44AUjTex2QEKq1s_qdfPC/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-download"></i>
-                Download Resume
-              </a>
+                    <FontAwesomeIcon icon={faFileDownload} className="Icon" />
+                    Download Resume
+                  </a>
                 </div>
               </MUI.Grid>
             </MUI.Grid>

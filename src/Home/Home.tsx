@@ -10,6 +10,31 @@ const Home = React.forwardRef((props: any, ref: any) => {
   const { data, ...scrollTos } = props;
   // console.log('Home scollTos:', scrollTos);
 
+  // ! set Home, About pages height to window height
+  // ? reference: https://usehooks.com/useWindowSize/
+  React.useEffect(()=>{
+    // * run the beginning, to set correct height
+    setPageSize();
+    // * add listener
+    window.addEventListener('resize', setPageSize);
+    // * remove listener
+    return () => window.removeEventListener('resize', setPageSize);
+    // ! only run once at page mount
+  }, []);
+
+  // * listener, set Home, About page height
+  const setPageSize = () => {
+    let windowHeight = window.innerHeight;
+    let homeElement = document.getElementById('home');
+    if(homeElement){
+      homeElement.style.height = windowHeight + 'px';
+    }
+    let aboutElement = document.getElementById('about');
+    if(aboutElement){
+      aboutElement.style.height = windowHeight + 'px';
+    }
+  }
+
   const getFAicons: any = {
     'github' : <FontAwesomeIcon icon={faGithub} />,
     'linkedin' : <FontAwesomeIcon icon={faLinkedin} />,
@@ -30,7 +55,7 @@ const Home = React.forwardRef((props: any, ref: any) => {
       <Navbar scrollTos={scrollTos} />
       <div className="Banner">
         <div className="BannerText">
-          <Typography variant="h2">I'm {data.name}.</Typography>
+          <Typography variant="h2" className="MyName">I'm {data.name}.</Typography>
           <Typography variant="h5">
             I'm a Junior <span>{data.occupation}</span> living at {data.location}. 
             <br />{data.description1}
