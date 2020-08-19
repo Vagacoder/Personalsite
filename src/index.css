@@ -143,12 +143,18 @@ div {
 
 #about .Biography{
   text-indent: 1em;
+  text-align: justify;
   line-height: 1.6em;
+  padding-right: 32px;
 }
 
 #about .Biography::first-letter{
   font-weight: bold;
   font-size: 200%;
+}
+
+#about .AboutContentContainer{
+  padding-top: 16px;
 }
 
 #about .AboutContentResume .ResumeDownload{
@@ -180,7 +186,18 @@ div {
 
 /* 3. About style end ============================ */
 
-/* 5. Footer style start ========================= */
+/* 4. Resume style start ========================= */
+
+
+
+/* 4. Resume style end =========================== */
+
+/* 5. Projects style start ======================= */
+
+
+/* 5. Projects style end ========================= */
+
+/* 7. Footer style start ========================= */
 #logs {
   text-align: center;
   display: flex;
@@ -265,4 +282,4 @@ div {
 }
 
 
-/* 5. Footer style end ===========================*/
+/* 7. Footer style end ===========================*/

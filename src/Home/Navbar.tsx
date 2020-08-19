@@ -6,7 +6,7 @@ import { Box, Typography, Button } from '@material-ui/core';
 const Navbar = ({scrollTos}: any) => {
 
   // console.log('Navbar scrollTos:', scrollTos);
-  const {scrollToHome, scrollToAbout} = scrollTos;
+  const {scrollToHome, scrollToAbout, scrollToResume} = scrollTos;
   // console.log('Navbar scrollToHome:', scrollToHome);
 
   return (
@@ -30,11 +30,11 @@ const Navbar = ({scrollTos}: any) => {
           <Button color="primary" onClick={scrollToAbout} >
           <Typography variant="h5">About</Typography>
           </Button>
-          <Button color="primary" >
+          <Button color="primary" onClick={scrollToResume} >
             <Typography variant="h5">Resume</Typography>
           </Button>
           <Button color="primary" >
-          <Typography variant="h5">Project</Typography>
+          <Typography variant="h5">Projects</Typography>
           </Button>
           <Button color="primary" >
             <Typography variant="h5">Contact</Typography>
