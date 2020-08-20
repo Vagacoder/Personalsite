@@ -187,9 +187,43 @@ div {
 /* 3. About style end ============================ */
 
 /* 4. Resume style start ========================= */
+#resume{
+  background: #f0f0f0;
+  overflow: hidden;
+}
+
+#resume .category{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 24px;
+}
+
+#resume .category .categoryName{
+  display: inline;
+  border-bottom: 3px solid #328cf3;
+  padding-bottom: 4px;
+}
+
+#resume .Educations{
+  padding: 24px;
+}
+
+#resume .Education{
+  margin-top: 8px;
+}
+#resume .SchoolName, .MajorAndDegree {
+  margin: 4px 0px 0px 0px;
+}
+
+#resume .SchoolDescription{
+  margin: 4px 0px 16px 0px;
+}
 
 
-
+#resume .dividor{
+  margin: 10px;
+}
 /* 4. Resume style end =========================== */
 
 /* 5. Projects style start ======================= */

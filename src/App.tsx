@@ -60,21 +60,22 @@ const App = () => {
           major: 'Computer Science',
           degree: 'N/A',
           year: 'Aug 2017 - May 2020',
-          description: ''
+          description: 'Three wonderful years study in SBCC as a part-time student. '+ 
+          'The best learning time in my life. Everyday I learned a lot.'
         },
         {
           school:'University of Hawaii at Manoa',
           major: 'Biomedical Science',
           degree: 'Ph.D',
           year: 'Aug 2001 - Dec 2006',
-          description: ''
+          description: 'Study human inherited cardiovascular diseases'
         },
         {
           school:'Chinese Academy of Science, Institute of Genetices',
           major: 'Molecular Genetics',
           degree: 'Master of Science',
           year: 'Aug 1998 - Aug 2001',
-          description: ''
+          description: 'Study gene experssion regulation'
         },
         {
           school:'Sichuan University',
