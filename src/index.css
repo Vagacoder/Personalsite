@@ -190,13 +190,16 @@ div {
 #resume{
   background: #f0f0f0;
   overflow: hidden;
+  padding-top: 42px;
+  padding-bottom: 24px;
 }
 
 #resume .category{
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  padding-top: 24px;
+  padding-top: 36px;
+  padding-bottom: 12px;
 }
 
 #resume .category .categoryName{
@@ -205,21 +208,57 @@ div {
   padding-bottom: 4px;
 }
 
-#resume .Educations{
+#resume .Educations, .Experiences{
   padding: 24px;
 }
 
-#resume .Education{
+#resume .Education, .Experience{
   margin-top: 8px;
 }
-#resume .SchoolName, .MajorAndDegree {
-  margin: 4px 0px 0px 0px;
+
+#resume .SchoolName .CompanyName{
+  font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .SchoolDescription{
-  margin: 4px 0px 16px 0px;
+#resume .SchoolName, .MajorAndDegree, CompanyName, .PositionAndYear {
+  margin: 0px;
 }
 
+#resume .SchoolDescription, .CompanyDescription{
+  margin: 10px 0px 18px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#resume .Major, .CompanyLocation{
+  font-style: italic;
+  font-size: 110%;
+}
+
+#resume .Degree{
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#resume .SchoolYear, .CompanyYear{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#resume .CompanyName, .CompanyLocation{
+  display: inline;
+  padding-right: 8px;
+}
+
+#resume .Position{
+  font-style: italic;
+  font-weight: bold;
+  padding-right: 8px;
+}
+
+#resume .CompanyYear{
+  padding-left: 8px;
+}
 
 #resume .dividor{
   margin: 10px;

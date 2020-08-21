@@ -10,8 +10,26 @@ const Resume = React.forwardRef((props: any, ref: any) => {
     return (
       <div key={education.school} className="Education">
         <MUI.Typography variant="h6" className="SchoolName">{education.school}</MUI.Typography>
-        <p className="MajorAndDegree">{education.major}, {education.degree}, <em className="SchoolYear">{education.year}</em></p>
+        <p className="MajorAndDegree">
+          <span className="Major">{education.major}, </span>
+          <span className="Degree">{education.degree}, </span>
+          <span className="SchoolYear">{education.year}</span>
+        </p>
         <div className="SchoolDescription">{education.description}</div>
+      </div>
+    );
+  });
+
+  const getExperience = data.experiences.map((exp: any) => {
+    return (
+      <div key={exp.company} className="Experience">
+        <MUI.Typography variant="h6" className="CompanyName">{exp.company}</MUI.Typography>
+        <MUI.Typography variant="body1" className="CompanyLocation">{exp.location}</MUI.Typography>
+        <p className="PositionAndYear">
+          <span className="Position">{exp.position}, </span>
+          <span className="CompanyYear">{exp.year}</span>
+        </p>
+        <div className="CompanyDescription">{exp.description.main}</div>
       </div>
     );
   });
@@ -43,8 +61,8 @@ const Resume = React.forwardRef((props: any, ref: any) => {
               </MUI.Typography>
             </div>
           </MUI.Grid>
-          <MUI.Grid item xs={8} >
-            <div>Company</div>
+          <MUI.Grid item xs={8} className="Experiences">
+            {getExperience}
           </MUI.Grid>
 
           <MUI.Grid item xs={12}>
@@ -58,7 +76,7 @@ const Resume = React.forwardRef((props: any, ref: any) => {
               </MUI.Typography>
             </div>
           </MUI.Grid>
-          <MUI.Grid item xs={8} >
+          <MUI.Grid item xs={8} className="Skills">
             <div>Skills</div>
           </MUI.Grid>
 

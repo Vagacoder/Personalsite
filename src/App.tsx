@@ -84,6 +84,50 @@ const App = () => {
           year: 'Aug 1994 - July 1998',
           description: ''
         },
+      ],
+      experiences:[
+        {
+          company:'BloomTrac Software',
+          location:'Santa Barbara, CA',
+          position:'Web Developer Intern',
+          year:'Mar 2019 - Jan 2020',
+          description:{
+            main: 'Web development',
+            details:[
+              'React and Firebase',
+              'ES6, typescript, redux',
+            ]
+          },
+        },
+        {
+          company:'UC Santa Barbara',
+          location:'Santa Barbara, CA',
+          position:'Project Scientist',
+          year:'Apr 2010 - Nov 2016',
+          description:{
+            main: 'Stem cell therapy',
+            details:[
+              'Center for Stem Cell Biology and Engineering',
+              'Visualize QPCR/microarray data',
+            ]
+          },
+        },
+        {
+          company:'UC Santa Barbara',
+          location:'Santa Barbara, CA',
+          position:'Postdoctoral Fellow',
+          year:'Nov 2007 - Apr 2010',
+          description:{
+            main: 'Fellow of California Institute for Regenerative Medicine Training program',
+            details:[
+              'UCSB Center for Bio-Image Informatics',
+              'Human embryonic stem cell and iPS cell',
+            ]
+          },
+        },
+      ],
+      skill:[
+
       ]
     },
     projects: {
