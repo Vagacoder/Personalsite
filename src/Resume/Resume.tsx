@@ -34,6 +34,17 @@ const Resume = React.forwardRef((props: any, ref: any) => {
     );
   });
 
+  const getSkills = data.skills.map((skill:any) => {
+    return (
+    <li key={skill.name} className='Skill'>
+      <span className='SkillName'>{skill.name}</span>
+      <div className='SkillbarBG'>
+        <span className='Skillbar' style={{width:skill.level}}></span>
+      </div>
+    </li>
+    );
+  })
+
   return (
     <section id="resume" ref={ref}>
       <div>
@@ -76,8 +87,8 @@ const Resume = React.forwardRef((props: any, ref: any) => {
               </MUI.Typography>
             </div>
           </MUI.Grid>
-          <MUI.Grid item xs={8} className="Skills">
-            <div>Skills</div>
+          <MUI.Grid item xs={5} className="Skills">
+            {getSkills}
           </MUI.Grid>
 
           <MUI.Grid item xs={12}>

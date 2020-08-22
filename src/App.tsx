@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Home';
 import About from './About';
 import Resume from './Resume';
+import Projects from './Projects';
 import Footer from './Footer';
 
 const App = () => {
@@ -126,13 +127,89 @@ const App = () => {
           },
         },
       ],
-      skill:[
-
+      skills:[
+        {
+          name:'React JS',
+          level:'65%',
+        },
+        {
+          name:'Javascript (ES6)',
+          level: '60%',
+        },
+        {
+          name: 'Typescript',
+          level: '60%',
+        },
+        {
+          name: 'HTML and CSS',
+          level: '80%',
+        },
+        {
+          name: 'Node JS',
+          level: '40%',
+        },
+        {
+          name: 'Git',
+          level: '70%',
+        },
+        {
+          name: 'Java',
+          level: '75%',
+        },
+        {
+          name: 'Android',
+          level: '50%',
+        },
+        {
+          name: 'Python',
+          level: '60%',
+        },
+        {
+          name: 'C#/Unity Engine',
+          level: '60%',
+        },
+        {
+          name: 'Linux',
+          level: '50%',
+        },
+        {
+          name: 'C/C++',
+          level: '50%',
+        },
+        {
+          name: 'NoSQL',
+          level: '60%',
+        },
+        {
+          name: 'SQL',
+          level: '50%',
+        },
+        {
+          name: 'R',
+          level: '40%',
+        },
       ]
     },
-    projects: {
-
-    },
+    projects: [
+      {
+        name: '',
+        link: '',
+        imageUrl: '',
+        description: '',
+      },
+      {
+        name: '',
+        link: '',
+        imageUrl: '',
+        description: '',
+      },
+      {
+        name: '',
+        link: '',
+        imageUrl: '',
+        description: '',
+      },
+    ],
   };
 
   // ! Note: the react function component cannot get ref
@@ -140,6 +217,7 @@ const App = () => {
   let homeRef = React.createRef();
   let aboutRef = React.createRef();
   let resumeRef = React.createRef();
+  let projectsRef = React.createRef();
 
 
   const scrollToRef = (ref: any) => {
@@ -152,6 +230,7 @@ const App = () => {
   const scrollToHome = () => scrollToRef(homeRef);
   const scrollToAbout = () => scrollToRef(aboutRef);
   const scrollToResume = () => scrollToRef(resumeRef);
+  const scrollToProjects = () => scrollToRef(projectsRef);
 
   return (
     <div className="App">
@@ -160,9 +239,11 @@ const App = () => {
         scrollToHome={scrollToHome}
         scrollToAbout={scrollToAbout}
         scrollToResume={scrollToResume}
+        scrollToProjects={scrollToProjects}
       />
       <About ref={aboutRef} data={data.about} />
       <Resume ref={resumeRef} data={data.resume} />
+      <Projects ref={projectsRef} data={data.projects} />
       <Footer />
     </div>
   );
