@@ -4,7 +4,6 @@ import * as MUI from '@material-ui/core';
 const Resume = React.forwardRef((props: any, ref: any) => {
 
   const {data} = props;
-  console.log(data);
 
   const getEducations = data.educations.map((education:any) => {
     return (
@@ -22,7 +21,7 @@ const Resume = React.forwardRef((props: any, ref: any) => {
 
   const getExperience = data.experiences.map((exp: any) => {
     return (
-      <div key={exp.company} className="Experience">
+      <div key={exp.year} className="Experience">
         <MUI.Typography variant="h6" className="CompanyName">{exp.company}</MUI.Typography>
         <MUI.Typography variant="body1" className="CompanyLocation">{exp.location}</MUI.Typography>
         <p className="PositionAndYear">

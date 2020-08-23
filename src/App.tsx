@@ -192,16 +192,16 @@ const App = () => {
     },
     projects: [
       {
-        name: '',
-        link: '',
-        imageUrl: '',
-        description: '',
+        name: 'Weather App',
+        link: 'https://github.com/Vagacoder/WeatherApp',
+        imageUrl: 'images/weatherapp1.png',
+        description: 'An experiemental app showing weather information in United States',
       },
       {
-        name: '',
-        link: '',
-        imageUrl: '',
-        description: '',
+        name: 'Duck Hunt',
+        link: 'https://github.com/Vagacoder/DuckHunt',
+        imageUrl: 'images/duckhunt1.png',
+        description: 'Remaster 1980\'s Nitendo shooting game',
       },
       {
         name: '',
