@@ -188,6 +188,10 @@ const App = () => {
           name: 'R',
           level: '40%',
         },
+        {
+          name: 'Deep Learning',
+          level: '30%',
+        },
       ]
     },
     projects: [
@@ -195,19 +199,53 @@ const App = () => {
         name: 'Weather App',
         link: 'https://github.com/Vagacoder/WeatherApp',
         imageUrl: 'images/weatherapp1.png',
-        description: 'An experiemental app showing weather information in United States',
+        description: 'An experiemental Android app showing weather information in United States. ' +
+        'Using Navigation Drawer, RecyclerView etc.',
       },
       {
         name: 'Duck Hunt',
         link: 'https://github.com/Vagacoder/DuckHunt',
         imageUrl: 'images/duckhunt1.png',
-        description: 'Remaster 1980\'s Nitendo shooting game',
+        description: 'Remaster 1980\'s Nitendo shooting game made using Unity Engine, with playable link',
       },
       {
-        name: '',
-        link: '',
-        imageUrl: '',
-        description: '',
+        name: 'Space Shooter',
+        link: 'https://github.com/Vagacoder/SpaceShooter',
+        imageUrl: 'images/spaceshooter1.png',
+        description: 'Spaceship shooting game made using Unity Engine, with playable link',
+      },
+      {
+        name: 'Stripe API',
+        link: 'https://github.com/Vagacoder/StripeAPIComponents',
+        imageUrl: 'images/stripeapi1.png',
+        description: 'A small React JS component calling Stripe.com RESTful APIs without using Stripe development tools. ' + 
+        'Demostrated using Storybook',
+      },
+      {
+        name: 'Calendar Component',
+        link: 'https://bit.dev/vagacoder/testing/calendar',
+        imageUrl: 'images/calendar1.png',
+        description: 'The Calendar is one of major React JS components on the Dashboard.' + 
+        ' It shows all booked events with some essential information such as event time, ' + 
+        'event name. Mouse hovering on event tag pops up a dialog box showing ' + 
+        'detailed information. It is also designed to be responsive for desktop ' + 
+        'and mobile devices.',
+      },
+      {
+        name: 'Algorithm 4th edition exercises',
+        link: 'https://github.com/Vagacoder/Algorithms4E',
+        imageUrl: 'images/algorithm4.png',
+        description: 'Outstanding textbook for students who truely want to learn algorithm. ' +
+        'It progressively introduced algorithms from easy to hard, plus a lot of online supplemental information ' +
+        'and exercises. Two books (part I and II) with six chapters, I am currently study the ' +
+        '5th chapetr, Strings.',
+      },
+      {
+        name: 'Big Java Early Objects 6th edition',
+        link: 'https://github.com/Vagacoder/BigJavaEO',
+        imageUrl: 'images/bigjava6.png',
+        description: 'A wonderful textbook for entry level students. It covers many aspects of ' +
+        'computer science and applications.',
       },
     ],
   };

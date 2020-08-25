@@ -297,7 +297,71 @@ div {
 /* 4. Resume style end =========================== */
 
 /* 5. Projects style start ======================= */
+#projects{
+  background: #d1d1d1;
+  overflow: hidden;
+  padding: 48px;
+}
 
+#projects .ProjectsTitle {
+  text-align: center;
+  color: #777777;
+  padding: 12px;
+}
+
+
+#projects .Project{
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#projects .ProjectContainer {
+  height: 280px;
+  display: flex;
+  justify-items: center;
+}
+
+#projects .ProjectContainer a {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-items: center;
+  background:#b3b3b3;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px darkgrey;
+}
+
+#projects .Project a img{
+  width: auto;
+  height: 100%;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#projects .Project .ProjectOverlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 226px;
+  color: #fff;
+  text-align: center;
+  padding-top: 54px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#projects .Project:hover .ProjectOverlay{
+  opacity: 1;
+}
+
+#projects .ProjectOverlay .ProjectDesciption {
+  margin: 8px;
+}
 
 /* 5. Projects style end ========================= */
 
