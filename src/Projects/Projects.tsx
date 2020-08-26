@@ -5,7 +5,7 @@ const Projects = React.forwardRef((props: any, ref: any) => {
 
   const { data } = props;
 
-  console.log(data);
+  // console.log(data);
 
   const getProjects = data.map((project: any) => {
     return (

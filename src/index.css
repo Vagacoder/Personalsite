@@ -217,11 +217,11 @@ div {
   margin-top: 8px;
 }
 
-#resume .SchoolName .CompanyName{
-  font: 25px/30px 'opensans-bold', sans-serif;
+#resume .SchoolName, .CompanyName, .CompanyLocation{
+  padding-bottom: 8px;
 }
 
-#resume .SchoolName, .MajorAndDegree, CompanyName, .PositionAndYear {
+#resume .SchoolName, .MajorAndDegree, .CompanyName{
   margin: 0px;
 }
 
@@ -251,6 +251,10 @@ div {
   padding-right: 8px;
 }
 
+#resume .Experience .PositionAndYear {
+  margin-top: 8px;
+}
+
 #resume .Position{
   font-style: italic;
   font-weight: bold;
@@ -259,6 +263,14 @@ div {
 
 #resume .CompanyYear{
   padding-left: 8px;
+}
+
+#resume .CompanyDescription{
+  font-size: 115%;
+}
+
+#resume .CompanyDescriptionDetail{
+  padding-bottom: 4px;
 }
 
 #resume .Skills{

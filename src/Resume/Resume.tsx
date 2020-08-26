@@ -8,7 +8,7 @@ const Resume = React.forwardRef((props: any, ref: any) => {
   const getEducations = data.educations.map((education:any) => {
     return (
       <div key={education.school} className="Education">
-        <MUI.Typography variant="h6" className="SchoolName">{education.school}</MUI.Typography>
+        <MUI.Typography variant="h5" className="SchoolName">{education.school}</MUI.Typography>
         <p className="MajorAndDegree">
           <span className="Major">{education.major}, </span>
           <span className="Degree">{education.degree}, </span>
@@ -22,13 +22,22 @@ const Resume = React.forwardRef((props: any, ref: any) => {
   const getExperience = data.experiences.map((exp: any) => {
     return (
       <div key={exp.year} className="Experience">
-        <MUI.Typography variant="h6" className="CompanyName">{exp.company}</MUI.Typography>
+        <MUI.Typography variant="h5" className="CompanyName">{exp.company}</MUI.Typography>
         <MUI.Typography variant="body1" className="CompanyLocation">{exp.location}</MUI.Typography>
         <p className="PositionAndYear">
           <span className="Position">{exp.position}, </span>
           <span className="CompanyYear">{exp.year}</span>
         </p>
         <div className="CompanyDescription">{exp.description.main}</div>
+        <ul className="CompanyDescriptionDetails">
+          {exp.description.details.map((detail:any, index:any) => {
+            return (
+              <li key={index} className="CompanyDescriptionDetail">
+                {detail}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     );
   });

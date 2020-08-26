@@ -62,28 +62,29 @@ const App = () => {
           degree: 'N/A',
           year: 'Aug 2017 - May 2020',
           description: 'Three wonderful years study in SBCC as a part-time student. '+ 
-          'The best learning time in my life. Everyday I learned a lot.'
+          'The best learning time so far. Everyday I learned a lot and I do enjoy the ' +
+          'the learning in computer science.'
         },
         {
           school:'University of Hawaii at Manoa',
           major: 'Biomedical Science',
           degree: 'Ph.D',
           year: 'Aug 2001 - Dec 2006',
-          description: 'Study human inherited cardiovascular diseases'
+          description: 'Research on human inherited cardiovascular diseases.'
         },
         {
           school:'Chinese Academy of Science, Institute of Genetices',
           major: 'Molecular Genetics',
           degree: 'Master of Science',
           year: 'Aug 1998 - Aug 2001',
-          description: 'Study gene experssion regulation'
+          description: 'Study gene experssion regulations.'
         },
         {
           school:'Sichuan University',
           major: 'Biotechnology',
           degree: 'Bachelor of Science',
           year: 'Aug 1994 - July 1998',
-          description: ''
+          description: 'Four years undergraduate study on biological science and its applications'
         },
       ],
       experiences:[
@@ -95,8 +96,14 @@ const App = () => {
           description:{
             main: 'Web development',
             details:[
-              'React and Firebase',
-              'ES6, typescript, redux',
+              'Develope a new website using React and Firebase',
+              'Participated in Agile development',
+              'Familiar with React development using ES6, typescript, redux',
+              'Hands on experience on tools such as NPM, Storybook, Bit, Netlify and CircleCI',
+              'Help manager and customer designing and refining new site concepts and use cases',
+              'Assist UI designing using Figma and Canva',
+              'Familiar with Material-UI and SASS',
+              'Implemented 5 React pages with minimum supervising',
             ]
           },
         },
@@ -106,10 +113,11 @@ const App = () => {
           position:'Project Scientist',
           year:'Apr 2010 - Nov 2016',
           description:{
-            main: 'Stem cell therapy',
+            main: 'Stem cell therapy for macular degeneration',
             details:[
-              'Center for Stem Cell Biology and Engineering',
-              'Visualize QPCR/microarray data',
+              'Worked at Center for Stem Cell Biology and Engineering',
+              'Pre-clinical and clinical stages of stem cell therapy for macular degeneration',
+              'Analysis and visualize large amouts of QPCR/microarray data',
             ]
           },
         },
@@ -121,8 +129,9 @@ const App = () => {
           description:{
             main: 'Fellow of California Institute for Regenerative Medicine Training program',
             details:[
-              'UCSB Center for Bio-Image Informatics',
-              'Human embryonic stem cell and iPS cell',
+              'Researcg on human embryonic stem cell and iPS cell',
+              'Collaboration with UCSB Center for Bio-Image Informatics to develop a software segregating ' + 
+              'overlapping cells in fluorescence microscopes',
             ]
           },
         },
@@ -227,9 +236,7 @@ const App = () => {
         imageUrl: 'images/calendar1.png',
         description: 'The Calendar is one of major React JS components on the Dashboard.' + 
         ' It shows all booked events with some essential information such as event time, ' + 
-        'event name. Mouse hovering on event tag pops up a dialog box showing ' + 
-        'detailed information. It is also designed to be responsive for desktop ' + 
-        'and mobile devices.',
+        'event name. It is responsive for desktop and mobile devices.',
       },
       {
         name: 'Algorithm 4th edition exercises',
@@ -237,8 +244,7 @@ const App = () => {
         imageUrl: 'images/algorithm4.png',
         description: 'Outstanding textbook for students who truely want to learn algorithm. ' +
         'It progressively introduced algorithms from easy to hard, plus a lot of online supplemental information ' +
-        'and exercises. Two books (part I and II) with six chapters, I am currently study the ' +
-        '5th chapetr, Strings.',
+        'and exercises.',
       },
       {
         name: 'Big Java Early Objects 6th edition',
@@ -246,6 +252,12 @@ const App = () => {
         imageUrl: 'images/bigjava6.png',
         description: 'A wonderful textbook for entry level students. It covers many aspects of ' +
         'computer science and applications.',
+      },
+      {
+        name: 'Portfolio',
+        link: 'https://github.com/Vagacoder/Personalsite',
+        imageUrl: 'images/portfolio1.png',
+        description: 'The source code of this website',
       },
     ],
   };
