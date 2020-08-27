@@ -7,7 +7,7 @@ const Navbar = ({scrollTos}: any) => {
 
   // console.log('Navbar scrollTos:', scrollTos);
   const {scrollToHome, scrollToAbout, scrollToResume,
-  scrollToProjects} = scrollTos;
+  scrollToProjects, scrollToContact} = scrollTos;
   // console.log('Navbar scrollToHome:', scrollToHome);
 
   return (
@@ -37,7 +37,7 @@ const Navbar = ({scrollTos}: any) => {
           <Button color="primary" onClick={scrollToProjects}>
           <Typography variant="h5">Projects</Typography>
           </Button>
-          <Button color="primary" >
+          <Button color="primary" onClick={scrollToContact}>
             <Typography variant="h5">Contact</Typography>
           </Button>
           {/* <IconButton>

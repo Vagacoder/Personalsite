@@ -3,6 +3,7 @@ import Home from './Home';
 import About from './About';
 import Resume from './Resume';
 import Projects from './Projects';
+import Contact from './Contact';
 import Footer from './Footer';
 
 const App = () => {
@@ -260,6 +261,9 @@ const App = () => {
         description: 'The source code of this website',
       },
     ],
+    contact:{
+
+    }
   };
 
   // ! Note: the react function component cannot get ref
@@ -268,6 +272,7 @@ const App = () => {
   let aboutRef = React.createRef();
   let resumeRef = React.createRef();
   let projectsRef = React.createRef();
+  let contactRef = React.createRef();
 
 
   const scrollToRef = (ref: any) => {
@@ -281,6 +286,7 @@ const App = () => {
   const scrollToAbout = () => scrollToRef(aboutRef);
   const scrollToResume = () => scrollToRef(resumeRef);
   const scrollToProjects = () => scrollToRef(projectsRef);
+  const scrollToContact = () => scrollToRef(contactRef);
 
   return (
     <div className="App">
@@ -290,11 +296,13 @@ const App = () => {
         scrollToAbout={scrollToAbout}
         scrollToResume={scrollToResume}
         scrollToProjects={scrollToProjects}
+        scrollToContact={scrollToContact}
       />
       <About ref={aboutRef} data={data.about} />
       <Resume ref={resumeRef} data={data.resume} />
       <Projects ref={projectsRef} data={data.projects} />
-      <Footer />
+      <Contact ref={contactRef} data={data.contact} />
+      <Footer scrollToHome={scrollToHome}/>
     </div>
   );
 }
