@@ -9,7 +9,7 @@ const Projects = React.forwardRef((props: any, ref: any) => {
 
   const getProjects = data.map((project: any) => {
     return (
-      <MUI.Grid item xs={4} key={project.name} className="Project">
+      <MUI.Grid item xs={12} sm={6} md={4} lg={3} key={project.name} className="Project">
         <div className="ProjectContainer">
           <a href={project.link} target="_blank" rel="noopener noreferrer">
             <img alt={project.name} src={project.imageUrl} />

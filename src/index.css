@@ -377,6 +377,21 @@ div {
 
 /* 5. Projects style end ========================= */
 
+/* 6. Contact style start ========================*/
+#contact {
+  color: lightgrey;
+  background: rgb(68, 68, 68);
+  min-height: 500px;
+  padding:48px;
+}
+
+#contact .MailIcon{
+  font-size: 48px;
+}
+
+
+/* 6. Contact style end ==========================*/
+
 /* 7. Footer style start ========================= */
 .ScrollHome{
   position: relative;
