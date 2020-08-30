@@ -107,12 +107,11 @@ div {
 #about {
   color: #FFF;
   background: #262425;
-  padding-top: 96px;
-  padding-bottom: 66px;
+  padding-top: 54px;
+  padding-bottom: 36px;
   overflow: hidden;
   position: relative;
-  height: 600px;
-  min-height: 510px;
+  min-height: 540px;
   width: 100%;
 }
 
@@ -159,9 +158,21 @@ div {
 }
 
 #about .AboutContentResume .ResumeDownload{
-  margin-top: 20px;
+  padding: 20px 0px 20px 0px;
   font-size: 150%;
   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+#about .AboutContentResume .CVtitle{
+  padding-top: 24px;
+  padding-right: 48px;
+  color: #328cf3;
+}
+
+#about .AboutContentResume .CVDownload{
+  /* margin-top: 20px; */
+  padding: 20px 0px 20px 0px;
+  font-size: 120%;
 }
 
 #about .AboutContentResume .ResumeDownload a{
@@ -169,8 +180,18 @@ div {
   border-radius: 4px;
 }
 
+#about .AboutContentResume .CVDownload a{
+  padding: 10px 16px 10px 16px;
+  border-radius: 4px;
+}
+
 #about .AboutContentResume .ResumeDownload .Icon{
   padding-right: 12px;
+}
+
+#about .AboutContentResume .CVDownload .Icon{
+  padding-right: 12px;
+  font-size: 125%;
 }
 
 #about .AboutContentResume a{
@@ -342,9 +363,11 @@ div {
   background:#b3b3b3;
   border-radius: 12px;
   box-shadow: 2px 2px 4px darkgrey;
+  overflow: hidden;
 }
 
 #projects .Project a img{
+  object-fit: cover;
   width: auto;
   height: 100%;
   margin: auto;

@@ -5,8 +5,6 @@ const Projects = React.forwardRef((props: any, ref: any) => {
 
   const { data } = props;
 
-  // console.log(data);
-
   const getProjects = data.map((project: any) => {
     return (
       <MUI.Grid item xs={12} sm={6} md={4} lg={3} key={project.name} className="Project">

@@ -22,16 +22,12 @@ const Home = React.forwardRef((props: any, ref: any) => {
     // ! only run once at page mount
   }, []);
 
-  // * listener, set Home, About page height
+  // * listener, set Home page height
   const setPageSize = () => {
     let windowHeight = window.innerHeight;
     let homeElement = document.getElementById('home');
     if(homeElement){
       homeElement.style.height = windowHeight + 'px';
-    }
-    let aboutElement = document.getElementById('about');
-    if(aboutElement){
-      aboutElement.style.height = windowHeight + 'px';
     }
   }
 
