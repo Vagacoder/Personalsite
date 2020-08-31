@@ -408,10 +408,20 @@ div {
   padding:48px;
 }
 
+#contact .ContactContainer{
+  max-width: 900px;
+  margin: auto;
+  padding: 12px;
+}
+
 #contact .MailIcon{
   font-size: 48px;
 }
 
+#contact .LeftColumn{
+  padding: 8px 4px 40px 36px;
+  text-align: left;
+}
 
 /* 6. Contact style end ==========================*/
 
