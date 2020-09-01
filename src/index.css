@@ -423,6 +423,30 @@ div {
   text-align: left;
 }
 
+#contact .Required{
+  color: #328cf3;
+}
+
+#contact .RightColumn input{
+  color: lightgrey;
+}
+
+#contact .RightColumn textarea{
+  color: lightgrey;
+}
+
+#contact .RightColumn .MuiInputBase-root{
+  /* border: 1px solid lightgrey; */
+  background-color: rgb(44, 44, 44);
+}
+
+#contact .SubmitButton{
+  margin-top: 24px;
+  margin-left: 24px;
+  font-size: 120%;
+  background: lightgrey;
+}
+
 /* 6. Contact style end ==========================*/
 
 /* 7. Footer style start ========================= */

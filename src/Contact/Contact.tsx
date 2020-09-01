@@ -25,20 +25,24 @@ const Contact = React.forwardRef((props: any, ref: any) => {
           <MUI.Grid container className="ContactTable">
             <MUI.Grid item xs={4} className="LeftColumn">
               <MUI.Typography variant="h6">
-                Name *
+                Name <span className="Required">*</span>
               </MUI.Typography>
             </MUI.Grid>
             <MUI.Grid item xs={8} className="RightColumn">
-              <MUI.TextField required id="SenderName" placeholder="Your name" variant="outlined" />
+              <MUI.FormControl fullWidth>
+                <MUI.TextField required id="SenderName" placeholder="Your name" variant="outlined" />
+              </MUI.FormControl>
             </MUI.Grid>
 
             <MUI.Grid item xs={4} className="LeftColumn">
               <MUI.Typography variant="h6">
-                Email *
+                Email <span className="Required">*</span>
               </MUI.Typography>
             </MUI.Grid>
             <MUI.Grid item xs={8} className="RightColumn">
-              <MUI.TextField required id="SenderEmail" placeholder="Your Email" variant="outlined" />
+              <MUI.FormControl fullWidth>
+                <MUI.TextField required id="SenderEmail" placeholder="Your Email" variant="outlined" />
+              </MUI.FormControl>
             </MUI.Grid>
 
             <MUI.Grid item xs={4} className="LeftColumn">
@@ -47,21 +51,25 @@ const Contact = React.forwardRef((props: any, ref: any) => {
               </MUI.Typography>
             </MUI.Grid>
             <MUI.Grid item xs={8} className="RightColumn">
-              <MUI.TextField id="Subject" variant="outlined" />
+              <MUI.FormControl fullWidth>
+                  <MUI.TextField id="Subject" variant="outlined" />
+              </MUI.FormControl>
             </MUI.Grid>
 
             <MUI.Grid item xs={4} className="LeftColumn">
               <MUI.Typography variant="h6">
-                Message *
+                Message <span className="Required">*</span>
               </MUI.Typography>
             </MUI.Grid>
             <MUI.Grid item xs={8} className="RightColumn">
-              <MUI.TextField required multiline id="SenderName" variant="outlined" />
+              <MUI.FormControl fullWidth>
+                <MUI.TextField required multiline rows={4} id="SenderName" variant="outlined" />
+              </MUI.FormControl>
             </MUI.Grid>
 
             <MUI.Grid item xs={4} className="LeftColumn"></MUI.Grid>
             <MUI.Grid item xs={8} className="RightColumn">
-              <MUI.Button>Submit</MUI.Button>
+              <MUI.Button className="SubmitButton">Submit</MUI.Button>
             </MUI.Grid>
 
           </MUI.Grid>
