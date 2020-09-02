@@ -1,4 +1,5 @@
 import React from 'react';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Home from './Home';
 import About from './About';
 import Resume from './Resume';
@@ -58,45 +59,45 @@ const App = () => {
     resume: {
       educations: [
         {
-          school:'Santa Barbara City College',
+          school: 'Santa Barbara City College',
           major: 'Computer Science',
           degree: 'N/A',
           year: 'Aug 2017 - May 2020',
-          description: 'Three wonderful years study in SBCC as a part-time student. '+ 
-          'The best learning time so far. Everyday I learned a lot and I do enjoy the ' +
-          'the learning in computer science.'
+          description: 'Three wonderful years study in SBCC as a part-time student. ' +
+            'The best learning time so far. Everyday I learned a lot and I do enjoy the ' +
+            'the learning in computer science.'
         },
         {
-          school:'University of Hawaii at Manoa',
+          school: 'University of Hawaii at Manoa',
           major: 'Biomedical Science',
           degree: 'Ph.D',
           year: 'Aug 2001 - Dec 2006',
           description: 'Research on human inherited cardiovascular diseases.'
         },
         {
-          school:'Chinese Academy of Science, Institute of Genetices',
+          school: 'Chinese Academy of Science, Institute of Genetices',
           major: 'Molecular Genetics',
           degree: 'Master of Science',
           year: 'Aug 1998 - Aug 2001',
           description: 'Study gene experssion regulations.'
         },
         {
-          school:'Sichuan University',
+          school: 'Sichuan University',
           major: 'Biotechnology',
           degree: 'Bachelor of Science',
           year: 'Aug 1994 - July 1998',
           description: 'Four years undergraduate study on biological science and its applications'
         },
       ],
-      experiences:[
+      experiences: [
         {
-          company:'BloomTrac Software',
-          location:'Santa Barbara, CA',
-          position:'Web Developer Intern',
-          year:'Mar 2019 - Jan 2020',
-          description:{
+          company: 'BloomTrac Software',
+          location: 'Santa Barbara, CA',
+          position: 'Web Developer Intern',
+          year: 'Mar 2019 - Jan 2020',
+          description: {
             main: 'Web development',
-            details:[
+            details: [
               'Develope a new website using React and Firebase',
               'Participated in Agile development',
               'Familiar with React development using ES6, typescript, redux',
@@ -109,13 +110,13 @@ const App = () => {
           },
         },
         {
-          company:'UC Santa Barbara',
-          location:'Santa Barbara, CA',
-          position:'Project Scientist',
-          year:'Apr 2010 - Nov 2016',
-          description:{
+          company: 'UC Santa Barbara',
+          location: 'Santa Barbara, CA',
+          position: 'Project Scientist',
+          year: 'Apr 2010 - Nov 2016',
+          description: {
             main: 'Stem cell therapy for macular degeneration',
-            details:[
+            details: [
               'Worked at Center for Stem Cell Biology and Engineering',
               'Pre-clinical and clinical stages of stem cell therapy for macular degeneration',
               'Analysis and visualize large amouts of QPCR/microarray data',
@@ -123,27 +124,27 @@ const App = () => {
           },
         },
         {
-          company:'UC Santa Barbara',
-          location:'Santa Barbara, CA',
-          position:'Postdoctoral Fellow',
-          year:'Nov 2007 - Apr 2010',
-          description:{
+          company: 'UC Santa Barbara',
+          location: 'Santa Barbara, CA',
+          position: 'Postdoctoral Fellow',
+          year: 'Nov 2007 - Apr 2010',
+          description: {
             main: 'Fellow of California Institute for Regenerative Medicine Training program',
-            details:[
+            details: [
               'Researcg on human embryonic stem cell and iPS cell',
-              'Collaboration with UCSB Center for Bio-Image Informatics to develop a software segregating ' + 
+              'Collaboration with UCSB Center for Bio-Image Informatics to develop a software segregating ' +
               'overlapping cells in fluorescence microscopes',
             ]
           },
         },
       ],
-      skills:[
+      skills: [
         {
-          name:'React JS',
-          level:'65%',
+          name: 'React JS',
+          level: '65%',
         },
         {
-          name:'Javascript (ES6)',
+          name: 'Javascript (ES6)',
           level: '60%',
         },
         {
@@ -210,7 +211,7 @@ const App = () => {
         link: 'https://github.com/Vagacoder/WeatherApp',
         imageUrl: 'images/weatherapp1.png',
         description: 'An experiemental Android app showing weather information in United States. ' +
-        'Using Navigation Drawer, RecyclerView etc.',
+          'Using Navigation Drawer, RecyclerView etc.',
       },
       {
         name: 'Duck Hunt',
@@ -228,31 +229,31 @@ const App = () => {
         name: 'Stripe API',
         link: 'https://github.com/Vagacoder/StripeAPIComponents',
         imageUrl: 'images/stripeapi1.png',
-        description: 'A small React JS component calling Stripe.com RESTful APIs without using Stripe development tools. ' + 
-        'Demostrated using Storybook',
+        description: 'A small React JS component calling Stripe.com RESTful APIs without using Stripe development tools. ' +
+          'Demostrated using Storybook',
       },
       {
         name: 'Calendar Component',
         link: 'https://bit.dev/vagacoder/testing/calendar',
         imageUrl: 'images/calendar1.png',
-        description: 'The Calendar is one of major React JS components on the Dashboard.' + 
-        ' It shows all booked events with some essential information such as event time, ' + 
-        'event name. It is responsive for desktop and mobile devices.',
+        description: 'The Calendar is one of major React JS components on the Dashboard.' +
+          ' It shows all booked events with some essential information such as event time, ' +
+          'event name. It is responsive for desktop and mobile devices.',
       },
       {
         name: 'Algorithm 4th edition exercises',
         link: 'https://github.com/Vagacoder/Algorithms4E',
         imageUrl: 'images/algorithm4.png',
         description: 'Outstanding textbook for students who truely want to learn algorithm. ' +
-        'It progressively introduced algorithms from easy to hard, plus a lot of online supplemental information ' +
-        'and exercises.',
+          'It progressively introduced algorithms from easy to hard, plus a lot of online supplemental information ' +
+          'and exercises.',
       },
       {
         name: 'Big Java Early Objects 6th edition',
         link: 'https://github.com/Vagacoder/BigJavaEO',
         imageUrl: 'images/bigjava6.png',
         description: 'A wonderful textbook for entry level students. It covers many aspects of ' +
-        'computer science and applications.',
+          'computer science and applications.',
       },
       {
         name: 'Portfolio',
@@ -261,10 +262,24 @@ const App = () => {
         description: 'The source code of this website',
       },
     ],
-    contact:{
+    contact: {
 
     }
   };
+
+  const theme = createMuiTheme({
+    palette: {
+      // type: 'dark',
+      primary: {
+        // light: "#6eaffa", // will be calculated from palette.primary.main,
+        main: "#328cf3",
+        // dark: "#0c67ce"
+      },
+      secondary:{
+        main: "#80deea",
+      }
+    }
+  })
 
   // ! Note: the react function component cannot get ref
   // ! must use React.forwardRef(), see Home.tsx implmentation
@@ -289,21 +304,23 @@ const App = () => {
   const scrollToContact = () => scrollToRef(contactRef);
 
   return (
-    <div className="App">
-      {/* <button onClick={scrollToAbout}>GO ABOUT</button> */}
-      <Home ref={homeRef} data={data.home}
-        scrollToHome={scrollToHome}
-        scrollToAbout={scrollToAbout}
-        scrollToResume={scrollToResume}
-        scrollToProjects={scrollToProjects}
-        scrollToContact={scrollToContact}
-      />
-      <About ref={aboutRef} data={data.about} />
-      <Resume ref={resumeRef} data={data.resume} />
-      <Projects ref={projectsRef} data={data.projects} />
-      <Contact ref={contactRef} data={data.contact} />
-      <Footer scrollToHome={scrollToHome}/>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        {/* <button onClick={scrollToAbout}>GO ABOUT</button> */}
+        <Home ref={homeRef} data={data.home}
+          scrollToHome={scrollToHome}
+          scrollToAbout={scrollToAbout}
+          scrollToResume={scrollToResume}
+          scrollToProjects={scrollToProjects}
+          scrollToContact={scrollToContact}
+        />
+        <About ref={aboutRef} data={data.about} />
+        <Resume ref={resumeRef} data={data.resume} />
+        <Projects ref={projectsRef} data={data.projects} />
+        <Contact ref={contactRef} data={data.contact} />
+        <Footer scrollToHome={scrollToHome} />
+      </div>
+    </ThemeProvider>
   );
 }
 

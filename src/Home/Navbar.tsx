@@ -25,7 +25,7 @@ const Navbar = ({scrollTos}: any) => {
         <Box>
           {/* <Button color="primary" href="#home" >Home</Button>
           <Button color="primary" href="#about">About</Button> */}
-          <Button color="primary" onClick={scrollToHome} >
+          <Button color="secondary" onClick={scrollToHome} >
             <Typography variant="h5">Home</Typography>
           </Button>
           <Button color="primary" onClick={scrollToAbout} >
