@@ -306,7 +306,6 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        {/* <button onClick={scrollToAbout}>GO ABOUT</button> */}
         <Home ref={homeRef} data={data.home}
           scrollToHome={scrollToHome}
           scrollToAbout={scrollToAbout}

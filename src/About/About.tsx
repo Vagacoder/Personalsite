@@ -33,7 +33,7 @@ const About = React.forwardRef((props: any, ref: any) => {
                   </a>
                 </div>
                 <div className="CVtitle">
-                  <MUI.Typography variant="body1">If you are interested in my previous background in biomedical science, please check my academia CV</MUI.Typography>
+                  <MUI.Typography color="primary" variant="body1">If you are interested in my previous background in biomedical science, please check my academia CV</MUI.Typography>
                 </div>
                 <div className="CVDownload">
                   <a href="https://drive.google.com/file/d/12P0fpiy6sIgSgfG_rfasaHubU8VJRk8L/view?usp=sharing" target="_blank" rel="noopener noreferrer">
