@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box, Typography, Button } from '@material-ui/core';
 // import MenuIcon from '@material-ui/icons/Menu';
 
+// ! Example, simple use style without knowing theme
 const useStyles = makeStyles({
   NavBar: {
     position: 'fixed',

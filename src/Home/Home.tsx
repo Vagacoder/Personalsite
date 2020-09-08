@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 
-const useStyles = makeStyles({
+// ! Example: How style access to theme, part 1/2, see 2/2 below
+const useStyles = makeStyles((theme) => ({
   Banner:{
     height: '100%',
     display: 'flex',
@@ -14,10 +15,11 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  BannerText:{
-    color: '#fff',
+  BannerText:(props) => ({
+    // color: '#fff',
+    color: theme.palette.secondary.light,
     margin: 'auto',
-  },
+  }),
   MyName: {
     fontWeight: 500,
   },
@@ -44,14 +46,20 @@ const useStyles = makeStyles({
     textShadow: '0px 1px 2px rgba(0, 0, 0, .8)',
     transition: 'color .3s ease-in-out',
     '&:hover': {
-      color: '#328cf3',
+      color: theme.palette.primary.main,
     }
   }
-});
+}));
 
 const Home = React.forwardRef((props: any, ref: any) => {
 
-  const classes = useStyles();
+  // ! Example: how to get Global Theme
+  const theme = useTheme();
+  console.log(theme);
+
+  // ! Example: how style access theme, part 2/2
+  // * Set jss for class, pass theme to styles
+  const classes = useStyles(theme);
 
   const { data, ...scrollTos } = props;
   // console.log('Home scollTos:', scrollTos);
