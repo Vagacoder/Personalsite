@@ -14,6 +14,14 @@ const data = {
         {
           name: 'github',
           url: 'https://github.com/Vagacoder',
+        },
+        {
+          name: 'medium',
+          url: 'https://medium.com/@vagacoder',
+        },
+        {
+          name: 'kaggle',
+          url: 'https://www.kaggle.com/vagacoder',
         }
       ]
     },

@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import { Typography } from '@material-ui/core';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faMedium, faKaggle } from '@fortawesome/free-brands-svg-icons';
 import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 
 // ! Example: How style access to theme, part 1/2, see 2/2 below
@@ -88,6 +88,8 @@ const Home = React.forwardRef((props: any, ref: any) => {
   const getFAicons: any = {
     'github' : <FontAwesomeIcon icon={faGithub} />,
     'linkedin' : <FontAwesomeIcon icon={faLinkedin} />,
+    'medium': <FontAwesomeIcon icon={faMedium} />,
+    'kaggle': <FontAwesomeIcon icon={faKaggle} />,
     'circleDown' : <FontAwesomeIcon icon={faChevronCircleDown} />
   };
 
