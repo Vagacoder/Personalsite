@@ -20,6 +20,10 @@ const data = {
           url: 'https://medium.com/@vagacoder',
         },
         {
+          name:'leetcode',
+          url:'https://leetcode.com/Vagacoder/',
+        },
+        {
           name: 'kaggle',
           url: 'https://www.kaggle.com/vagacoder',
         }

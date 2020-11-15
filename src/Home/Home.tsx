@@ -5,6 +5,8 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faMedium, faKaggle } from '@fortawesome/free-brands-svg-icons';
 import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
+import { Icon } from '@iconify/react';
+import leetcodeIcon from '@iconify-icons/simple-icons/leetcode';
 
 // ! Example: How style access to theme, part 1/2, see 2/2 below
 const useStyles = makeStyles((theme) => ({
@@ -89,6 +91,7 @@ const Home = React.forwardRef((props: any, ref: any) => {
     'github' : <FontAwesomeIcon icon={faGithub} />,
     'linkedin' : <FontAwesomeIcon icon={faLinkedin} />,
     'medium': <FontAwesomeIcon icon={faMedium} />,
+    'leetcode': <Icon icon={leetcodeIcon}/>,
     'kaggle': <FontAwesomeIcon icon={faKaggle} />,
     'circleDown' : <FontAwesomeIcon icon={faChevronCircleDown} />
   };
