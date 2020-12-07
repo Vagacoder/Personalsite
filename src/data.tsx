@@ -56,7 +56,7 @@ const data = {
         'goal, to be a good programmer. Although I am not a real programmer yet, I ' +
         'believe I can do it in a not so far future.',
       email: 'qiruihu[at]gmail[.]com',
-      resumeUrl: 'https://drive.google.com/file/d/18_UDc7a7wHQ44AUjTex2QEKq1s_qdfPC/view?usp=sharing'
+      resumeUrl: 'https://drive.google.com/file/d/1T_8EgNrDVUxkC9S2uJgEmPaI7S0UDpK7/view?usp=sharing'
     },
     resume: {
       educations: [

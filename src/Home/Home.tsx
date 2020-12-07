@@ -57,7 +57,7 @@ const Home = React.forwardRef((props: any, ref: any) => {
 
   // ! Example: how to get Global Theme
   const theme = useTheme();
-  console.log(theme);
+  // console.log(theme);
 
   // ! Example: how style access theme, part 2/2
   // * Set jss for class, pass theme to styles
