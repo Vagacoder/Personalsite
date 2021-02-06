@@ -56,7 +56,7 @@ const data = {
         'goal, to be a good programmer. Although I am not a real programmer yet, I ' +
         'believe I can do it in a not so far future.',
       email: 'qiruihu[at]gmail[.]com',
-      resumeUrl: 'https://drive.google.com/file/d/1T_8EgNrDVUxkC9S2uJgEmPaI7S0UDpK7/view?usp=sharing'
+      resumeUrl: 'https://drive.google.com/file/d/1koPqkEywpzYPhWYT2XBEZTV8ROH7hvAg/view?usp=sharing'
     },
     resume: {
       educations: [
@@ -92,6 +92,19 @@ const data = {
         },
       ],
       experiences: [
+        {
+          company: 'Teladoc Health',
+          location: 'Goleta, CA',
+          position: 'Software Engineer Intern',
+          year: 'Jan 2021 - Present',
+          description: {
+            main: 'Web development',
+            details: [
+              'Interpreter service',
+              'Mobile device launch pages',
+            ]
+          },
+        },
         {
           company: 'BloomTrac Software',
           location: 'Santa Barbara, CA',

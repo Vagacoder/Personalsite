@@ -27,7 +27,7 @@ const About = React.forwardRef((props: any, ref: any) => {
               </MUI.Grid>
               <MUI.Grid item xs={6} className="AboutContentResume">
                 <div className="ResumeDownload">
-                  <a href={data.resumeUrl}>
+                  <a href={data.resumeUrl} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faFileDownload} className="Icon" />
                     Download Resume
                   </a>
